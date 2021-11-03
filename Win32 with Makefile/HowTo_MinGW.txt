@@ -1,0 +1,17 @@
+= = =
+= Wie kann man unter Windows eine make-Datei ausführen?
+
+Open folder, open terminal and run
+> mingw32-make
+
+= = =
+= Links
+
+https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/
+
+Tolles Win32-Tutorial
+http://www.winprog.org/tutorial/
+
+Tipp
+In C/MinGW kann man 'mingw32-make.exe' einfach kopieren und in 'make.exe' umbennen, sodass 
+man in der CMD nur noch make tippen muss. make funktioniert dann auch einwandfrei mit Sublime.

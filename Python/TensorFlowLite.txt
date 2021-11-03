@@ -1,0 +1,21 @@
+# # # 
+# Installation TensorFlow Lite
+
+Unter Ubuntu brauchte ich es nicht. 
+Wenn Sie Debian Linux oder ein Derivat von Debian 
+(einschließlich Raspberry Pi OS) verwenden, 
+sollten Sie von unserem Debian-Paket-Repository
+installieren. Dies erfordert, dass Sie Ihrem System
+eine neue Repository-Liste und einen neuen Schlüssel
+hinzufügen und dann wie folgt installieren:
+
+echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install python3-tflite-runtime
+
+sonst
+
+pip install --index-url https://google-coral.github.io/py-repo/ tflite_runtime
+
+Quelle: https://www.tensorflow.org/lite/guide/python

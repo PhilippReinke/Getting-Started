@@ -1,0 +1,19 @@
+___Scan for IPs in your network.
+ifconfig (see current device)
+sudo arp-scan --interface=wlp3s0 --localnet
+fastest way to see local ip: hostname -I 
+
+___Connect via ssh.
+ssh pi@192.168.178.89
+(
+	default password: raspberry
+)
+
+___Shutdown Raspberry
+shutdown -h now 	// herunterfahren
+shutdown -r now 	// neustarten
+or better
+sudo reboot
+
+___For VNC use RealVNC
+Activate VNC in settings and use the default option RealVNC.
